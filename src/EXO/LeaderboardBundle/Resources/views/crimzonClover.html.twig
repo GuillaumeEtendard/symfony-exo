@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crimzon Clover</title>
+    {% block stylesheets %}
+        {% stylesheets 'bundles/leaderboard/css/*' %}
+        <link rel="stylesheet" href="../bundles/leaderboard/css/styles.css" media="all" />
+        {% endstylesheets %}
+    {% endblock %}
+</head>
+<body>
+<a href="../crimzonclover">Crimzon Clover</a>
+<a href="../deathsmiles">Deathsmiles</a>
+<a href="../ikaruga">Ikaruga</a>
+<a href="../mushihimesama">Mushihimesama</a><br><br>
+
+<iframe width="420" height="315" src="{{ src }}" frameborder="0"
+        allowfullscreen></iframe>
+
+<ul>
+    <li><a href="../crimzonclover/type1">Type 1</a></li>
+    <li><a href="../crimzonclover/type3">Type 3</a></li>
+    <li><a href="../crimzonclover/typeZ">Type Z</a></li>
+</ul>
+</body>
+</html>

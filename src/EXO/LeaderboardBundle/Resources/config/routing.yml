@@ -1,0 +1,11 @@
+leaderboard_deathsmiles:
+    path: /deathsmiles
+    defaults: { _controller: LeaderboardBundle:Pink:deathsmiles }
+
+leaderboard_crimzon_clover:
+    path: /crimzonclover/{vaisseau}
+    defaults: { _controller: LeaderboardBundle:NotPink:crimzonClover, vaisseau : 'typeZ' }
+
+leaderboard_ikarug:
+    path: /ikaruga/{backgroundColor}
+    defaults: { _controller: LeaderboardBundle:NotPink:ikaruga, backgroundColor : 'white' }

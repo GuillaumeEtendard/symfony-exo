@@ -1,0 +1,9 @@
+parameters:
+    backgroundColor: 'backgroundColor'
+
+services:
+    leaderboard:
+        class:        EXO\LeaderboardBundle\Controller\NotPinkController
+        calls:
+            - [ikarugaVerification]
+        arguments: ['%backgroundColor%']
