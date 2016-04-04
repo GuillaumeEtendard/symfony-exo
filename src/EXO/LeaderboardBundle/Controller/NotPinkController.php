@@ -33,17 +33,10 @@ class NotPinkController extends Controller
             $backgroundColor = "white";
             $textColor = 'black';
         }
-
-
         return $this->render(
             'LeaderboardBundle:ikaruga.html.twig',
             array('backgroundColor' => $backgroundColor,
                 'textColor' => $textColor)
         );
-    }
-
-    public function ikarugaVerification ($backgroundColor){
-        $backgroundColor = $this->get('leaderboard');
-        var_dump($backgroundColor);
     }
 }
